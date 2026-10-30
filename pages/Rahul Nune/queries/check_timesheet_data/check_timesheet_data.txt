@@ -1,0 +1,5 @@
+SELECT 
+  MIN(start_date) AS earliest_drive, 
+  MAX(end_date) AS latest_drive, 
+  COUNT(*) AS total_drives
+FROM public.drives;

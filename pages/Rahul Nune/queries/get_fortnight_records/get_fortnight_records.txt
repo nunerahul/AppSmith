@@ -1,0 +1,11 @@
+SELECT 
+  TO_CHAR(work_date, 'YYYY-MM-DD') AS "Date",
+  trim(TO_CHAR(work_date, 'Day')) AS "Day",
+  COALESCE(TO_CHAR(start_time, 'HH24:MI'), '-') AS "Start Time",
+  COALESCE(TO_CHAR(finish_time, 'HH24:MI'), CASE WHEN start_time IS NOT NULL THEN 'In Progress' ELSE '-' END) AS "Finish Time",
+  COALESCE(meal_break, '-') AS "Meal Break",
+  COALESCE(total_hours, 0.00) AS "Total Ordinary Hours",
+  COALESCE(status, 'Logged') AS "Status"
+FROM public.timesheet_records
+WHERE work_date >= '2026-08-01'
+ORDER BY work_date ASC;
