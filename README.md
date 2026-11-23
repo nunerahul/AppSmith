@@ -1,11 +1,41 @@
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
+<div align="center">
 
-This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
+# Timesheet Dashboard
 
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/images/integrations.png)
+### Shift auditing & payroll accruals, in one place
 
-### [Github](https://github.com/appsmithorg/appsmith) • [Docs](https://docs.appsmith.com/?utm_source=github&utm_medium=social&utm_content=appsmith_docs&utm_campaign=null&utm_term=appsmith_docs) • [Community](https://community.appsmith.com/) • [Tutorials](https://github.com/appsmithorg/appsmith/tree/update/readme#tutorials) • [Youtube](https://www.youtube.com/appsmith) • [Discord](https://discord.gg/rBTTVJp)
+![Appsmith](https://img.shields.io/badge/Appsmith-2E3A59?style=for-the-badge&logo=appsmith&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-##### You can visit the application using the below link
+A self-hosted Appsmith monitoring tool that streamlines shift auditing and payroll accruals.
 
-###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](http://rahul-tesla.duckdns.org:8085/applications/6ae2dd65f8a086bf7d5c4047/pages/6ae2dd66f8a086bf7d5c4049) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](http://rahul-tesla.duckdns.org:8085/applications/6ae2dd65f8a086bf7d5c4047/pages/6ae2dd66f8a086bf7d5c4049/edit)
+</div>
+
+---
+
+## What it does
+
+Powered by PostgreSQL, it tracks **14-day work cycles**, renders **dynamic shift spline curves**, and calculates live **PAYG withholding**, **net take-home pay**, and **leave accruals** — all packaged in a fluid Obsidian-style interface.
+
+| | |
+|---|---|
+| **Shift auditing** | See every shift in a 14-day cycle, at a glance |
+| **Shift curves** | Dynamic spline curves show shift patterns over time |
+| **Live PAYG** | PAYG withholding calculated as you go |
+| **Take-home pay** | Net pay, live — no spreadsheet needed |
+| **Leave accruals** | Leave balances tracked alongside shifts |
+
+## Tech
+
+- **Appsmith** — the dashboard itself, self-hosted
+- **PostgreSQL** — timesheet data, 14-day cycles, accruals
+- **JavaScript** — dashboard logic
+
+## Live app
+
+[Open the Timesheet Dashboard](http://rahul-tesla.duckdns.org:8085/applications/6ae2dd65f8a086bf7d5c4047/pages/6ae2dd66f8a086bf7d5c4049)
+
+---
+
+Built by [Rahul Nune](https://github.com/nunerahul) in Melbourne.
